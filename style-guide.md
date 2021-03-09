@@ -40,7 +40,7 @@ The designs were created to the following widths:
   
 
   
-  Monitors activity to identify project roadblocks
+  
 
   Team Builder
   Scans our talent network to create the optimal team for your project
