@@ -1,31 +1,52 @@
 /**** GENERAL RESET ****/
 
-:root{
-    --Red: hsl(0, 78%, 62%);
-    --Cyan: hsl(180, 62%, 55%);
-    --Orange: hsl(34, 97%, 64%);
-    --Blue: hsl(212, 86%, 64%);
-    --VeryDarkBlue: hsl(234, 12%, 34%);
-    --GrayishBlue: hsl(229, 6%, 66%);
-    --VeryLightGray: hsl(0, 0%, 98%);
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-family: 'Poppins', sans-serif;
-    font-size: 62.5%; /*** It's like 1rem ==> 10px ***/ 
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%; /*** It's like 1rem ==> 10px ***/
 }
 
 /**** END OF GENERAL RESET ****/
 
-
-body{
-    font-size: 1.5rem;
-    line-height: 1.5;
-    background-color: var(--VeryLightGray);
+body {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background-color: var(--VeryLightGray);
 }
+
+/**** HEADER PART ****/
+
+.quality {
+  font-weight: 200;
+  font-size: 2.7rem;
+  color: var(--VeryDarkBlue);
+}
+
+.powered {
+  font-weight: 600;
+  font-size: 2.7rem;
+  color: var(--VeryDarkBlue);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: var(--GrayishBlue);
+}
+
+/**** END OF HEADER PART ****/
