@@ -28,18 +28,22 @@ body {
   font-size: 1.5rem;
   line-height: 1.5;
   background-color: var(--VeryLightGray);
-  padding: 5rem 20rem;
+  padding: 2rem 0;
 }
 
 /*********************************** HEADER PART **************************************/
 
+
 .about{
     width: 40rem;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4rem auto;
 }
+
 
 .quality {
   font-weight: 200;
@@ -68,9 +72,32 @@ body {
 
 .services{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+}
+
+@media screen and (max-width: 958px) {
+
+    .services{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    
+    .about{
+        width: 25rem;
+    }
+
+    .quality, .powered{
+        font-size: 2rem;
+    }
+
+    .services{
+        flex-direction: row;
+    }
+
 }
 
 /***** GENERAL BOX LAYOUT ******/
@@ -80,38 +107,61 @@ body {
     height: 20rem;
     background-color: white;
     border-radius: 1rem;
-    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.199);
+    box-shadow: 0 1rem 2.5rem rgba(84, 158, 242, 0.123);
     padding: 2.5rem;
 }
 
+
+.longer{
+    margin: 3rem;
+}
+
 .cyan{
-    border-top: .4rem solid var(--Cyan);
+    border-top: .3rem solid var(--Cyan);
     background-image: url(images/icon-supervisor.svg);
     background-repeat: no-repeat;
     background-position: bottom 2vw right 5vh;
+    background-size: 15%;
 
 }
 
 .red{
-    border-top: .4rem solid var(--Red);
+    border-top: .3rem solid var(--Red);
     background-image: url(images/icon-team-builder.svg);
     background-repeat: no-repeat;
     background-position: bottom 2vw right 5vh;
+    margin-bottom: 3rem;
+    background-size: 15%;
 }
 
 .blue{
-    border-top: .4rem solid var(--Blue);
+    border-top: .3rem solid var(--Blue);
     background-image: url(images/icon-calculator.svg);
     background-repeat: no-repeat;
     background-position: bottom 2vw right 5vh;
+    background-size: 15%;
 }
 
 .orange{
-    border-top: .4rem solid var(--Orange);
+    border-top: .3rem solid var(--Orange);
     background-image: url(images/icon-karma.svg);
     background-repeat: no-repeat;
     background-position: bottom 2vw right 5vh;
+    background-size: 15%;
 }
+
+
+@media screen and (max-width: 470px){
+
+    .red, .cyan, .orange, .blue{
+        background-position: bottom 5vw right 5vh;
+    }
+
+    .offering{
+        width: 25rem;
+    }
+}
+
 
 /***** END OF GENERAL BOX LAYOUT ******/
 
