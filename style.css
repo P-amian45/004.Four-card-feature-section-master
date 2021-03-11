@@ -28,7 +28,7 @@ body {
   font-size: 1.5rem;
   line-height: 1.5;
   background-color: var(--VeryLightGray);
-  margin-top: 10rem;
+  padding: 5rem 20rem;
 }
 
 /*********************************** HEADER PART **************************************/
@@ -67,7 +67,10 @@ body {
 /********************************* SERVICES SECTION **********************************************/
 
 .services{
-    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
 }
 
 /***** GENERAL BOX LAYOUT ******/
@@ -77,25 +80,57 @@ body {
     height: 20rem;
     background-color: white;
     border-radius: 1rem;
-    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.356);
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.199);
+    padding: 2.5rem;
 }
 
 .cyan{
-border-top: .4rem solid var(--Cyan);
+    border-top: .4rem solid var(--Cyan);
+    background-image: url(images/icon-supervisor.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 2vw right 5vh;
+
 }
 
 .red{
     border-top: .4rem solid var(--Red);
+    background-image: url(images/icon-team-builder.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 2vw right 5vh;
 }
 
 .blue{
     border-top: .4rem solid var(--Blue);
+    background-image: url(images/icon-calculator.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 2vw right 5vh;
 }
 
 .orange{
     border-top: .4rem solid var(--Orange);
+    background-image: url(images/icon-karma.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 2vw right 5vh;
 }
 
-/***** GENERAL BOX LAYOUT ******/
+/***** END OF GENERAL BOX LAYOUT ******/
+
+
+/***** GENERAL BOX TYPOGRAPHY ******/
+
+.skills{
+    font-weight: 600;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 1rem;
+}
+
+.little-description{
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--GrayishBlue);
+}
+
+/***** END OF GENERAL BOX TYPOGRAPHY ******/
+
 
 /********************************* SERVICES SECTION **********************************************/
